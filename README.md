@@ -1,69 +1,139 @@
-<<<<<<< HEAD
-🚗 Driver Drowsiness Detection System (Python)
+```markdown
+# 🚗 Driver Drowsiness Detection System
 
-A real-time driver monitoring system that detects eye closure using a webcam and triggers an alert sound when drowsiness is detected. This project is designed to enhance road safety by warning drivers before fatigue leads to accidents.
+A real-time **driver drowsiness detection system** built with Python that monitors eye activity using a webcam and alerts the driver when signs of fatigue are detected.
 
-📌 Features
-👁️ Real-time eye tracking using computer vision
-⚠️ Detects eye closure / drowsiness
-🔊 Audio alert (beep sound) when eyes remain closed
-🎥 Works with live webcam feed
-⚡ Lightweight and fast execution
-🛠️ Tech Stack
-Python
-OpenCV – for video processing
-MediaPipe – for facial landmark detection
-NumPy – for calculations
-Pygame / Beep Sound Module – for alert system
-=======
-# Quick Start Guide - Driver Drowsiness Detection
+---
 
-## 30-Second Setup
+## 📌 Overview
 
-### Step 1: Install Dependencies
-Open PowerShell in the `Driving Simulator` folder and run:
-```powershell
+This project uses **computer vision and facial landmark detection** to track eye movement. If the driver’s eyes remain closed for a certain duration, the system triggers an alert sound to prevent potential accidents.
+
+---
+
+## ✨ Features
+
+- 👁️ Real-time eye detection  
+- ⚠️ Detects drowsiness based on eye closure  
+- 🔊 Instant alert (beep sound)  
+- 🎥 Live webcam monitoring  
+- ⚡ Fast and lightweight  
+
+---
+
+## 🛠️ Technologies Used
+
+- Python  
+- OpenCV  
+- MediaPipe  
+- NumPy  
+- Pygame (for sound alerts)  
+
+---
+
+## 📂 Project Structure
+
+```
+
+Driver-Drowsiness-Detection-System/
+│
+├── code.py              # Main Python script
+├── alarm.wav            # Alert sound file
+├── requirements.txt     # Dependencies
+├── README.md            # Documentation
+└── assets/              # Optional (screenshots/videos)
+
+````
+
+---
+
+## ⚙️ Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/AliBinQamar/Driver-Drowsiness-Detection-System.git
+cd Driver-Drowsiness-Detection-System
+````
+
+2. Create virtual environment:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+3. Install dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
-### Step 2: Download Model File
-```powershell
-python download_model.py
-```
-Wait for the download to complete (~5-10 minutes on average internet).
+---
 
-### Step 3: Run the Program
-```powershell
+## ▶️ How to Run
+
+```bash
 python code.py
 ```
 
-## That's It!
+* Make sure your webcam is enabled
+* Sit in front of the camera
+* The system will monitor your eyes in real-time
+* If drowsiness is detected → 🚨 alert sound will trigger
 
-The program will:
-- Show a video feed from your webcam
-- Draw green boxes around your face
-- Show Eye Aspect Ratio (EAR) values
-- **Beep an alarm** if you close your eyes for ~1 second
-- Stop the alarm when you open your eyes
+---
 
-## What You'll See
+## 🧠 How It Works
+
+* Detects face using MediaPipe
+* Tracks eye landmarks
+* Calculates **Eye Aspect Ratio (EAR)**
+* If EAR drops below threshold → eyes considered closed
+* If closed for a few seconds → alert is triggered
+
+---
+
+## ⚠️ Limitations
+
+* Requires proper lighting
+* May be less accurate with glasses
+* Depends on webcam quality
+* Not a replacement for professional safety systems
+
+---
+
+## 🚀 Future Improvements
+
+* Head pose detection
+* Mobile app version
+* AI-based fatigue prediction
+* Integration with smart vehicles
+* Dashboard for analytics
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repo
+2. Create a new branch
+3. Make changes
+4. Submit a pull request
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👤 Author
+
+**Ali Qamar**
+GitHub: [https://github.com/AliBinQamar](https://github.com/AliBinQamar)
 
 ```
-Left EAR: 0.45      ← Higher = eyes open, Lower = eyes closed
-Right EAR: 0.42
-Average EAR: 0.43
-Closed Frames: 0/30 ← When this reaches 30→ ALARM!
 ```
-
-## Exit
-
-Press **'q'** to quit the program.
-
-## Didn't Work?
-
-1. **"No face detected"**: Move closer to camera, check lighting
-2. **"Model not found"**: Run `python download_model.py` again
-3. **dlib install fails**: Run `pip install dlib-wheel` instead
-
-For detailed help, see `setup_guide.md`
->>>>>>> 7d04600 (Code uploaded)
