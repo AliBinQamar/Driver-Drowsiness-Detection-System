@@ -1,126 +1,78 @@
-```markdown
+Here is a **clean, properly written, professional README content** (no code formatting, ready to paste directly into GitHub):
+
+---
+
 # 🚗 Driver Drowsiness Detection System
 
-A real-time **driver drowsiness detection system** built with Python that monitors eye activity using a webcam and alerts the driver when signs of fatigue are detected.
+The Driver Drowsiness Detection System is a real-time application built using Python that monitors a driver’s eye activity through a webcam. It helps improve road safety by detecting signs of fatigue and alerting the driver before it leads to potential accidents.
 
 ---
 
 ## 📌 Overview
 
-This project uses **computer vision and facial landmark detection** to track eye movement. If the driver’s eyes remain closed for a certain duration, the system triggers an alert sound to prevent potential accidents.
+This system uses computer vision techniques and facial landmark detection to continuously track the driver’s eyes. When the system detects that the eyes remain closed for a specific duration, it triggers an alert sound to wake the driver and prevent drowsy driving.
 
 ---
 
 ## ✨ Features
 
-- 👁️ Real-time eye detection  
-- ⚠️ Detects drowsiness based on eye closure  
-- 🔊 Instant alert (beep sound)  
-- 🎥 Live webcam monitoring  
-- ⚡ Fast and lightweight  
+* Real-time eye detection using a webcam
+* Drowsiness detection based on eye closure
+* Instant audio alert when fatigue is detected
+* Continuous live monitoring
+* Lightweight and efficient performance
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Python  
-- OpenCV  
-- MediaPipe  
-- NumPy  
-- Pygame (for sound alerts)  
+* Python
+* OpenCV
+* MediaPipe
+* NumPy
+* Pygame (for alert sound)
 
 ---
 
 ## 📂 Project Structure
 
-```
-
-Driver-Drowsiness-Detection-System/
-│
-├── code.py              # Main Python script
-├── alarm.wav            # Alert sound file
-├── requirements.txt     # Dependencies
-├── README.md            # Documentation
-└── assets/              # Optional (screenshots/videos)
-
-````
+The project consists of a main Python script that handles detection logic, an audio file for alerts, a requirements file for dependencies, and optional assets such as screenshots or demo videos.
 
 ---
 
 ## ⚙️ Installation
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/AliBinQamar/Driver-Drowsiness-Detection-System.git
-cd Driver-Drowsiness-Detection-System
-````
-
-2. Create virtual environment:
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-```
-
-3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
+To run this project, first clone the repository from GitHub to your local machine. Then create and activate a virtual environment. After that, install all required dependencies using the requirements file.
 
 ---
 
 ## ▶️ How to Run
 
-```bash
-python code.py
-```
-
-* Make sure your webcam is enabled
-* Sit in front of the camera
-* The system will monitor your eyes in real-time
-* If drowsiness is detected → 🚨 alert sound will trigger
+Once the setup is complete, run the main Python script. Ensure your webcam is enabled and that you are positioned in front of it. The system will start monitoring your eyes in real time. If your eyes remain closed for a few seconds, an alert sound will be triggered automatically.
 
 ---
 
 ## 🧠 How It Works
 
-* Detects face using MediaPipe
-* Tracks eye landmarks
-* Calculates **Eye Aspect Ratio (EAR)**
-* If EAR drops below threshold → eyes considered closed
-* If closed for a few seconds → alert is triggered
+The system uses MediaPipe to detect facial landmarks and identify the position of the eyes. It then calculates a value known as the Eye Aspect Ratio (EAR). When this value drops below a predefined threshold, it indicates that the eyes are closed. If this condition persists for a certain period, the system considers the driver drowsy and activates an alert.
 
 ---
 
 ## ⚠️ Limitations
 
-* Requires proper lighting
-* May be less accurate with glasses
-* Depends on webcam quality
-* Not a replacement for professional safety systems
+The system performs best under good lighting conditions. Its accuracy may decrease if the user is wearing glasses or if the face is partially obstructed. The performance also depends on the quality of the webcam. This project is intended for educational purposes and should not be considered a replacement for professional safety systems.
 
 ---
 
 ## 🚀 Future Improvements
 
-* Head pose detection
-* Mobile app version
-* AI-based fatigue prediction
-* Integration with smart vehicles
-* Dashboard for analytics
+Future enhancements may include adding head pose detection, developing a mobile version, integrating AI-based fatigue prediction, connecting with smart vehicle systems, and building a dashboard for monitoring driver behavior.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome!
-
-1. Fork the repo
-2. Create a new branch
-3. Make changes
-4. Submit a pull request
+Contributions are welcome. You can fork the repository, create a new branch, make improvements, and submit a pull request.
 
 ---
 
@@ -132,8 +84,6 @@ This project is licensed under the MIT License.
 
 ## 👤 Author
 
-**Ali Qamar**
+Ali Bin Qamar
 GitHub: [https://github.com/AliBinQamar](https://github.com/AliBinQamar)
 
-```
-```
